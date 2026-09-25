@@ -6,7 +6,7 @@ layout: null
 {% for item in items %}
 {
   "title": {{ item.title | jsonify }},
-  "url": {{ item.url | jsonify }},
+  "url": {{ item.url | relative_url | jsonify }},
   "description": {{ item.description | jsonify }},
   "setor": {{ item.setor | jsonify }},
   "aliases": {{ item.aliases | jsonify }},
