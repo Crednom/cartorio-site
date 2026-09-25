@@ -1,0 +1,15 @@
+{% if include.video and include.video.url %}
+<div class="media-video">
+  <video controls playsinline preload="metadata" {% if include.video.poster %}poster="{{ include.video.poster | relative_url }}"{% endif %}>
+    <source src="{{ include.video.url | relative_url }}" type="video/mp4">
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+</div>
+{% endif %}
+{% if include.gallery %}
+<div class="media-gallery">
+  {% for image in include.gallery %}
+    <img src="{{ image | relative_url }}" alt="" loading="lazy" decoding="async">
+  {% endfor %}
+</div>
+{% endif %}

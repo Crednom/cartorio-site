@@ -1,0 +1,23 @@
+- id: civil
+  title: "Registro Civil"
+  short: "Civil"
+  icon: "users"
+  description: "Registros que marcam os principais momentos da vida."
+  image: "/assets/images/civil.svg"
+  order: 1
+
+- id: notas
+  title: "Notas"
+  short: "Notas"
+  icon: "file"
+  description: "Segurança jurídica em cada ato."
+  image: "/assets/images/notas.svg"
+  order: 2
+
+- id: protesto
+  title: "Protesto"
+  short: "Protesto"
+  icon: "shield"
+  description: "Mais segurança nas suas relações."
+  image: "/assets/images/protesto.svg"
+  order: 3

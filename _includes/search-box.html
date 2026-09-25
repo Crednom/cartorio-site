@@ -1,0 +1,11 @@
+<div class="search-box-frame" data-search-frame>
+  <div class="search-box" id="busca" data-search-box data-sector="{{ include.sector | default: '' }}">
+    <div class="search-box__icon">{% include icon.html name="search" %}</div>
+    <div class="search-box__input">
+      <label for="global-search">O que você está procurando?</label>
+      <input id="global-search" data-search-input autocomplete="off" type="search" placeholder="Pesquise serviços ou documentos" />
+    </div>
+    <button type="button" class="button button--primary" data-search-button>Buscar <span>→</span></button>
+    <div class="search-results" data-search-results hidden></div>
+  </div>
+</div>

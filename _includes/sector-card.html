@@ -1,0 +1,14 @@
+<a class="sector-card js-tilt" href="{{ '/setores/' | append: setor.id | append: '/' | relative_url }}" data-tilt>
+  <div class="sector-card__media" style="background-image:url('{{ setor.image | relative_url }}')"></div>
+  <span class="card-glow"></span>
+  <div class="sector-card__content">
+    <div class="sector-icon">{% include icon.html name=setor.icon %}</div>
+    <h2>{{ setor.title }}</h2>
+    <p>{{ setor.description }}</p>
+    <div class="mini-list">
+      {% assign items = site.servicos | where: "setor", setor.id | where: "enabled", true | sort: "order" %}
+      {% for item in items limit: 4 %}<span>{{ item.title }}</span>{% endfor %}
+    </div>
+    <span class="card-link">Saiba mais <b>→</b></span>
+  </div>
+</a>

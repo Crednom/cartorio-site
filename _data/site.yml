@@ -1,0 +1,19 @@
+name: "Cartório Salge Andrade"
+tagline: "Registro Civil • Notas • Protesto"
+hero:
+  eyebrow: "TRADIÇÃO • SEGURANÇA • CONFIANÇA"
+  title: "Serviços que fazem parte dos momentos importantes da sua vida."
+  text: "Registro Civil, Notas e Protesto com atendimento próximo, seguro e transparente."
+  button: "Conheça nossos serviços"
+contact:
+  civil:
+    title: "Registro Civil"
+    whatsapp: "5533998171547"
+    display: "(33) 99817-1547"
+  notas:
+    title: "Notas e Protesto"
+    whatsapp: "5533999586268"
+    display: "(33) 99958-6268"
+address: "Rua Hilda Moreira Gomes, 345 — Centro — Itanhomi/MG"
+hours: "Segunda a sexta • 09h–12h | 13h–17h"
+plantao: "Plantão de óbito • sábados, domingos e feriados • 09h–12h | 13h–17h"

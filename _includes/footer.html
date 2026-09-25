@@ -1,0 +1,12 @@
+<footer class="footer" id="contato">
+  <div class="container footer-grid">
+    <div class="brand brand--footer">
+      <span class="brand__icon"><img src="{{ '/assets/images/logo_icone.svg' | relative_url }}" alt=""></span>
+      <span class="brand__text"><span class="brand__overline">Cartório</span><strong>Salge Andrade</strong><small>Civil <i>|</i> Notas <i>|</i> Protesto</small></span>
+    </div>
+    <div><strong>Institucional</strong><a href="{{ '/' | relative_url }}">Início</a><a href="{{ '/' | relative_url }}#setores">Serviços</a><a href="{{ '/' | relative_url }}#busca">Dúvidas</a></div>
+    <div><strong>Atendimento</strong><span>{{ site.data.site.address }}</span><span>{{ site.data.site.hours }}</span><span>{{ site.data.site.plantao }}</span></div>
+    <div><strong>WhatsApp</strong><a href="https://wa.me/{{ site.data.site.contact.civil.whatsapp }}" target="_blank" rel="noopener">Registro Civil</a><a href="https://wa.me/{{ site.data.site.contact.notas.whatsapp }}" target="_blank" rel="noopener">Notas e Protesto</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© {{ "now" | date: "%Y" }} {{ site.data.site.name }}. Todos os direitos reservados.</span><span>Site estático • GitHub Pages</span></div>
+</footer>

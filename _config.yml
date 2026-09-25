@@ -1,0 +1,40 @@
+title: "Cartório"
+description: "Registro Civil, Notas e Protesto"
+baseurl: ""
+url: ""
+markdown: kramdown
+permalink: pretty
+
+collections:
+  setores:
+    output: true
+    permalink: /setores/:name/
+  servicos:
+    output: true
+    permalink: /servicos/:name/
+  artigos:
+    output: true
+    permalink: /artigos/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "servicos"
+    values:
+      layout: "servico"
+  - scope:
+      path: ""
+      type: "setores"
+    values:
+      layout: "setor"
+  - scope:
+      path: ""
+      type: "artigos"
+    values:
+      layout: "artigo"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

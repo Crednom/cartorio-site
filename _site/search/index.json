@@ -1,0 +1,124 @@
+[
+
+
+{
+  "title": "Transcrição de Casamento",
+  "url": "/servicos/transcricao-casamento/",
+  "description": "Registro de transcrição de casamento registro civil.",
+  "setor": "civil",
+  "aliases": ["Transcrição de Casamento","transcrição","transcricao","traslado","estrangeiro"],
+  "tags": ["civil","certidão","registro"],
+  "enabled": true
+},
+
+{
+  "title": "Protesto de Títulos",
+  "url": "/servicos/protesto-de-titulos/",
+  "description": "Informações sobre apresentação e protesto de títulos.",
+  "setor": "protesto",
+  "aliases": ["protesto","título","protestar título","protesto de título"],
+  "tags": ["protesto","títulos"],
+  "enabled": true
+},
+
+{
+  "title": "Escrituras",
+  "url": "/servicos/escrituras/",
+  "description": "Informações sobre escrituras públicas e seus procedimentos.",
+  "setor": "notas",
+  "aliases": ["escritura","escrituras","escritura pública"],
+  "tags": ["notas","escritura"],
+  "enabled": true
+},
+
+{
+  "title": "Cancelamento",
+  "url": "/servicos/cancelamento/",
+  "description": "Informações sobre cancelamento de protesto.",
+  "setor": "protesto",
+  "aliases": ["cancelar protesto","baixa de protesto","cancelamento"],
+  "tags": ["protesto","cancelamento"],
+  "enabled": true
+},
+
+{
+  "title": "Casamento Civil",
+  "url": "/servicos/casamento-civil/",
+  "description": "Informações sobre habilitação, documentos e realização do casamento civil.",
+  "setor": "civil",
+  "aliases": ["casamento","casar","quero casar","casamento no cartório","matrimônio"],
+  "tags": ["civil","casamento","habilitação"],
+  "enabled": true
+},
+
+{
+  "title": "Procuração",
+  "url": "/servicos/procuracao/",
+  "description": "Informações sobre procurações públicas e seus procedimentos.",
+  "setor": "notas",
+  "aliases": ["procuração","procuracao","mandato","quero fazer procuração"],
+  "tags": ["notas","procuração"],
+  "enabled": true
+},
+
+{
+  "title": "Reconhecimento de Firma",
+  "url": "/servicos/reconhecimento-de-firma/",
+  "description": "Informações sobre reconhecimento de firma e assinatura.",
+  "setor": "notas",
+  "aliases": ["reconhecer firma","firma","reconhecimento de assinatura","reconhecimento de firma"],
+  "tags": ["notas","firma","assinatura"],
+  "enabled": true
+},
+
+{
+  "title": "Certidão de Protesto",
+  "url": "/servicos/certidao-de-protesto/",
+  "description": "Informações sobre certidões relacionadas a protesto.",
+  "setor": "protesto",
+  "aliases": ["certidão de protesto","certidao protesto","certidão negativa"],
+  "tags": ["protesto","certidão"],
+  "enabled": true
+},
+
+{
+  "title": "Autenticações",
+  "url": "/servicos/autenticacoes/",
+  "description": "Informações sobre autenticação de documentos.",
+  "setor": "notas",
+  "aliases": ["autenticação","autenticar documento","cópia autenticada"],
+  "tags": ["notas","autenticação"],
+  "enabled": true
+},
+
+{
+  "title": "Sustação",
+  "url": "/servicos/sustacao/",
+  "description": "Informações gerais sobre sustação de protesto.",
+  "setor": "protesto",
+  "aliases": ["sustação","sustar protesto"],
+  "tags": ["protesto","sustação"],
+  "enabled": true
+},
+
+{
+  "title": "Transcrição de Nascimento",
+  "url": "/servicos/transcricao-nascimento/",
+  "description": "Informações sobre Transcrição de Nascimento.",
+  "setor": "civil",
+  "aliases": ["transcrição","transcricao nascimento","traslado nascimento","nascimento exterior"],
+  "tags": ["civil","transcrição"],
+  "enabled": true
+},
+
+{
+  "title": "Procuração Eletrônica",
+  "url": "/servicos/procuracao-eletronica/",
+  "description": "Guia sobre procuração eletrônica e atendimento digital.",
+  "setor": "notas",
+  "aliases": ["procuração eletrônica","e-notariado","notariado digital","procuração online"],
+  "tags": ["notas","procuração","e-notariado"],
+  "enabled": true
+}
+
+]

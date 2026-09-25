@@ -1,0 +1,82 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero__backdrop"></div>
+  <div class="hero__glow"></div>
+  <div class="container hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">{{ site.data.site.hero.eyebrow }}</p>
+      <h1>{{ site.data.site.hero.title | replace: 'momentos importantes', '<em>momentos importantes</em>' }}</h1>
+      <p class="hero__text">{{ site.data.site.hero.text }}</p>
+      <a class="button button--primary" href="#setores">{{ site.data.site.hero.button }} <span>→</span></a>
+    </div>
+    <div class="hero__mark" aria-hidden="true">
+      <div class="hero__mark-icon">{% include icon.html name="building" %}</div>
+      <span>Cartório</span>
+      <small>Registro Civil • Notas • Protesto</small>
+    </div>
+  </div>
+  <div class="hero__scroll">Role para explorar <span>↓</span></div>
+</section>
+
+<section class="sectors-overlap" id="setores">
+  <div class="container sector-grid">
+    {% assign setores = site.data.setores | sort: "order" %}
+    {% for setor in setores %}
+      {% assign doc = site.setores | where: "id", setor.id | first %}
+      {% if doc.enabled != false %}
+        {% include sector-card.html setor=setor %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="search-section">
+  <div class="container">
+    {% include search-box.html %}
+    <div class="popular">
+      <p class="eyebrow">MAIS PROCURADOS</p>
+      <h2>Encontre o que você precisa</h2>
+      <div class="chips">
+        {% assign popular = site.servicos | where: "featured", true | where: "enabled", true | sort: "order" %}
+        {% for item in popular limit: 6 %}
+          <a class="chip" href="{{ item.url | relative_url }}">
+            {% include icon.html name=item.icon %}
+            {{ item.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="explore">
+  <div class="container">
+    <p class="eyebrow">NOSSOS SERVIÇOS</p>
+    <h2>Explore cada setor</h2>
+    {% for setor in site.data.setores %}
+      {% include service-row.html setor=setor %}
+    {% endfor %}
+  </div>
+</section>
+
+<section class="help-section">
+  <div class="container help-grid">
+    <div>
+      <p class="eyebrow">PRECISA DE AJUDA?</p>
+      <h2>Estamos aqui para te atender.</h2>
+      <p>Tire suas dúvidas, agende seu atendimento ou fale com nossa equipe. Será um prazer ajudar.</p>
+    </div>
+    <div class="contact-cards">
+      <a class="contact-card" href="https://wa.me/{{ site.data.site.contact.civil.whatsapp }}" target="_blank" rel="noopener">
+        {% include icon.html name="users" %}
+        <div><strong>Registro Civil</strong><small>Nascimento • Casamento • Óbito</small><span>Falar no WhatsApp →</span></div>
+      </a>
+      <a class="contact-card" href="https://wa.me/{{ site.data.site.contact.notas.whatsapp }}" target="_blank" rel="noopener">
+        {% include icon.html name="file" %}
+        <div><strong>Notas e Protesto</strong><small>Escrituras • Procurações • Firma • Protesto</small><span>Falar no WhatsApp →</span></div>
+      </a>
+    </div>
+  </div>
+</section>

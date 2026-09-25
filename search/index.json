@@ -1,0 +1,17 @@
+---
+layout: null
+---
+[
+{% assign items = site.servicos | where: "enabled", true | sort: "order" %}
+{% for item in items %}
+{
+  "title": {{ item.title | jsonify }},
+  "url": {{ item.url | jsonify }},
+  "description": {{ item.description | jsonify }},
+  "setor": {{ item.setor | jsonify }},
+  "aliases": {{ item.aliases | jsonify }},
+  "tags": {{ item.tags | jsonify }},
+  "enabled": {{ item.enabled | jsonify }}
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

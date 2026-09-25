@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% assign setor_id = page.path | split: "/" | last | split: "." | first %}
+{% assign setor = site.data.setores | where: "id", setor_id | first %}
+<section class="page-hero">
+  <div class="container">
+    <a class="breadcrumb" href="{{ '/' | relative_url }}">Início</a>
+    <p class="eyebrow">{{ setor.short }}</p>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </div>
+</section>
+
+<section class="sector-page">
+  <div class="container">
+    <div class="sector-search">{% include search-box.html sector=setor_id %}</div>
+    <div class="sector-services-heading">
+      <p class="eyebrow">{{ setor.short }}</p>
+      <h2>Todos os serviços</h2>
+      <p>Veja os serviços disponíveis neste setor.</p>
+    </div>
+    <div class="service-grid service-grid--large">
+      {% assign items = site.servicos | where: "setor", setor_id | where: "enabled", true | sort: "order" %}
+      {% for item in items %}
+        {% include service-card.html item=item %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

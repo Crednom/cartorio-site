@@ -1,0 +1,24 @@
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Página inicial do Cartório Salge Andrade">
+      <span class="brand__icon"><img src="{{ '/assets/images/logo_icone.svg' | relative_url }}" alt=""></span>
+      <span class="brand__text"><span class="brand__overline">Cartório</span><strong>Salge Andrade</strong><small>Civil <i>|</i> Notas <i>|</i> Protesto</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="{{ '/' | relative_url }}">Início</a>
+      <a href="{{ '/' | relative_url }}#setores">Serviços</a>
+      <a href="{{ '/' | relative_url }}#busca">Dúvidas</a>
+      <a href="{{ '/' | relative_url }}#contato">Sobre</a>
+      <a href="{{ '/' | relative_url }}#contato">Contato</a>
+    </nav>
+    <a class="header-search" href="{{ '/' | relative_url }}#busca" data-search-link aria-label="Pesquisar">{% include icon.html name="search" %}<span>Pesquisar</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobile-menu" aria-label="Navegação móvel">
+    <a href="{{ '/' | relative_url }}">Início</a>
+    <a href="{{ '/' | relative_url }}#setores">Serviços</a>
+    <a href="{{ '/' | relative_url }}#busca">Dúvidas</a>
+    <a href="{{ '/' | relative_url }}#contato">Sobre</a>
+    <a href="{{ '/' | relative_url }}#contato">Contato</a>
+  </nav>
+</header>

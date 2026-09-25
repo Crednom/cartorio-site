@@ -1,0 +1,10 @@
+<a class="service-card" href="{{ item.url | relative_url }}" data-service data-sector="{{ item.setor }}">
+  <div class="service-card__image" {% if item.image != "" %}style="background-image:url('{{ item.image | relative_url }}')"{% endif %}>
+    <div class="service-card__icon">{% include icon.html name=item.icon %}</div>
+  </div>
+  <div class="service-card__body">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.description }}</p>
+    <span>Saiba mais →</span>
+  </div>
+</a>

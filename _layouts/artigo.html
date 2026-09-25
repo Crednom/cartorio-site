@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container">
+    <a class="breadcrumb" href="{{ '/' | relative_url }}">Início</a>
+    <p class="eyebrow">GUIA</p>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </div>
+</section>
+<section class="article">
+  <div class="container article__content">
+    {% if page.image %}<img class="article__image" src="{{ page.image | relative_url }}" alt="" loading="eager">{% endif %}
+    {{ content }}
+  </div>
+</section>
