@@ -15,7 +15,7 @@ layout: default
       {% if page.image != "" %}
         <img class="article__image" src="{{ page.image | relative_url }}" alt="" loading="eager">
       {% endif %}
-      {% include media.html video=page.video gallery=page.gallery %}
+      {% include media.html video=page.video youtube=page.youtube gallery=page.gallery %}
       {{ content }}
       <div class="article__cta">
         <h2>Ainda ficou com alguma dúvida?</h2>

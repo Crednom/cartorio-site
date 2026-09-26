@@ -21,7 +21,13 @@ enabled: true
 status: "active"
 order: 2
 image: /assets/images/casamento_civil.png
+youtube: "https://www.youtube.com/watch?v=Rmj6dB1m7mY"
+
 ---
+
+## Como funciona
+
+
 ## Guia Completo: Documentos e Regras para Casamento CivilSobre este serviço
 
 Vai casar? Confira a lista completa de documentos necessários, regras de comprovantes de endereço, escolha do regime de bens e prazos importantes do processo de habilitação!

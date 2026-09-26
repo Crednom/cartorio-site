@@ -6,6 +6,27 @@
   </video>
 </div>
 {% endif %}
+{% if include.youtube %}
+  {% assign yt = include.youtube | strip %}
+  {% if yt contains "youtu.be/" %}
+    {% assign yt_id = yt | split: "youtu.be/" | last | split: "?" | first | split: "&" | first %}
+  {% elsif yt contains "v=" %}
+    {% assign yt_id = yt | split: "v=" | last | split: "&" | first %}
+  {% elsif yt contains "youtube.com/embed/" %}
+    {% assign yt_id = yt | split: "embed/" | last | split: "?" | first | split: "&" | first %}
+  {% else %}
+    {% assign yt_id = yt %}
+  {% endif %}
+<div class="media-video media-video--youtube">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/{{ yt_id }}"
+    title="{{ include.youtube_title | default: page.title | default: 'Vídeo' }}"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen></iframe>
+</div>
+{% endif %}
 {% if include.gallery %}
 <div class="media-gallery">
   {% for image in include.gallery %}

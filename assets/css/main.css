@@ -61,7 +61,7 @@ h2{font-size:clamp(2rem,4vw,3.3rem)}
   *,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
 
-.media-video{margin:28px 0;border-radius:24px;overflow:hidden;background:#1a0e0a}.media-video video{display:block;width:100%;height:auto}.media-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0}.media-gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;background:#24130d}
+.media-video{margin:28px 0;border-radius:24px;overflow:hidden;background:#1a0e0a}.media-video video{display:block;width:100%;height:auto}.media-video--youtube{position:relative;aspect-ratio:16/9;background:#000}.media-video--youtube iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}.media-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0}.media-gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:16px;background:#24130d}
 @media(max-width:700px){.media-gallery{grid-template-columns:1fr}}
 
 /* Reference treatment: deep smoked-glass sector cards with warm edge light. */
