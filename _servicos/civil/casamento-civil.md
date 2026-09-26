@@ -20,7 +20,7 @@ featured: true
 enabled: true
 status: "active"
 order: 2
-image: assets\images\casamento_civil.png
+image: /assets/images/casamento_civil.png
 ---
 ## Guia Completo: Documentos e Regras para Casamento CivilSobre este serviço
 

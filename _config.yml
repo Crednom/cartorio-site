@@ -1,7 +1,7 @@
 title: "Cartório"
 description: "Registro Civil, Notas e Protesto"
-baseurl: ""
-url: ""
+baseurl: "/cartorio-site"
+url: "https://crednom.github.io"
 markdown: kramdown
 permalink: pretty
 
