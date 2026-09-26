@@ -160,3 +160,279 @@ h2{font-size:clamp(2rem,4vw,3.3rem)}
   .search-box.is-sticky .search-box__input{display:flex;align-items:center;align-self:stretch;height:100%;line-height:1}
   .search-box.is-sticky .search-box__input input{display:block;align-self:center;height:24px;line-height:24px;padding:0;margin:0;font-size:16px}
 }
+
+/* =========================================================
+   Blockquotes personalizados — Callouts
+   Uso em Markdown/artigos:
+     > **Dica:** texto aqui                → blockquote padrão (dica)
+     {: .callout-dica }                    → classe via Kramdown
+   Ou diretamente em HTML:
+     <blockquote class="callout callout--dica">…</blockquote>
+   ========================================================= */
+
+/* Base */
+blockquote,
+.callout {
+  position: relative;
+  margin: 32px 0;
+  padding: 18px 22px 18px 62px;
+  border-radius: 14px;
+  border-left: 4px solid var(--copper);
+  background: rgba(211,139,110,.08);
+  color: var(--ink);
+  font-size: .95rem;
+  line-height: 1.65;
+}
+blockquote::before,
+.callout::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 26px;
+  height: 26px;
+  background-color: var(--copper);
+  border-radius: 50%;
+  -webkit-mask-image: var(--callout-icon);
+  mask-image: var(--callout-icon);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 60%;
+  mask-size: 60%;
+  flex-shrink: 0;
+}
+blockquote > *:first-child,
+.callout > *:first-child { margin-top: 0 }
+blockquote > *:last-child,
+.callout > *:last-child  { margin-bottom: 0 }
+
+/* Label (negrito no início) */
+blockquote strong:first-child,
+.callout strong:first-child {
+  display: block;
+  font-size: .78rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--copper);
+}
+
+/* --- Dica (padrão) ---------------------------------------- */
+blockquote,
+.callout,
+.callout--dica {
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' y1='8' x2='12' y2='12'/%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'/%3E%3C/svg%3E");
+}
+
+/* --- Aviso ------------------------------------------------- */
+.callout--aviso {
+  border-left-color: #d4a017;
+  background: rgba(212,160,23,.08);
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13'/%3E%3Cline x1='12' y1='17' x2='12.01' y2='17'/%3E%3C/svg%3E");
+}
+.callout--aviso::before { background-color: #d4a017 }
+.callout--aviso strong:first-child { color: #b38614 }
+
+/* --- Atenção ----------------------------------------------- */
+.callout--atencao {
+  border-left-color: #c0392b;
+  background: rgba(192,57,43,.07);
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='12' y1='8' x2='12' y2='12'/%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'/%3E%3C/svg%3E");
+}
+.callout--atencao::before { background-color: #c0392b }
+.callout--atencao strong:first-child { color: #a93226 }
+
+/* --- Importante -------------------------------------------- */
+.callout--importante {
+  border-left-color: #703726;
+  background: rgba(112,55,38,.09);
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'/%3E%3C/svg%3E");
+}
+.callout--importante::before { background-color: #703726 }
+.callout--importante strong:first-child { color: #703726 }
+
+/* --- Sucesso ----------------------------------------------- */
+.callout--sucesso {
+  border-left-color: #27ae60;
+  background: rgba(39,174,96,.08);
+  --callout-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 11.08V12a10 10 0 11-5.93-9.14'/%3E%3Cpolyline points='22 4 12 14.01 9 11.01'/%3E%3C/svg%3E");
+}
+.callout--sucesso::before { background-color: #27ae60 }
+.callout--sucesso strong:first-child { color: #1e8449 }
+
+/* --- Citação (sem ícone) ----------------------------------- */
+.callout--citacao {
+  border-left: 4px solid var(--copper-light);
+  background: transparent;
+  padding-left: 28px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--brown);
+  line-height: 1.7;
+}
+.callout--citacao::before { display: none }
+.callout--citacao cite {
+  display: block;
+  margin-top: 10px;
+  font-size: .78rem;
+  font-style: normal;
+  font-family: "DM Sans", system-ui, sans-serif;
+  color: var(--muted);
+  letter-spacing: .06em;
+}
+.callout--citacao cite::before { content: "— " }
+
+/* Responsive */
+@media(max-width:700px){
+  blockquote,
+  .callout {
+    padding: 15px 16px 15px 52px;
+    font-size: .9rem;
+  }
+  blockquote::before,
+  .callout::before {
+    left: 14px;
+    top: 15px;
+    width: 22px;
+    height: 22px;
+  }
+  .callout--citacao { padding-left: 20px; font-size: 1rem }
+}
+
+/* =========================================================
+   Botões de conteúdo — .btn-md
+   Uso via include:
+     {% include button.html text="Falar no WhatsApp" link="https://wa.me/..." icon="whatsapp" %}
+     {% include button.html text="Ver documento" link="/doc.pdf" icon="download" variant="secondary" %}
+     {% include button.html text="Agendar" link="/agendamento" icon="calendar" variant="ghost" size="sm" %}
+   ========================================================= */
+
+.btn-md {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 0;
+  border-radius: 999px;
+  padding: 13px 24px;
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-size: .92rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, opacity .18s ease;
+  vertical-align: middle;
+}
+.btn-md:hover  { transform: translateY(-2px) }
+.btn-md:active { transform: translateY(0) scale(.97) }
+.btn-md:focus-visible {
+  outline: 2px solid var(--copper-light);
+  outline-offset: 3px;
+}
+
+/* Ícone */
+.btn-md__icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex-shrink: 0;
+  display: block;
+}
+/* Ícone no lado direito — coloque icon após span no include, ou use .btn-md--icon-right */
+.btn-md--icon-right { flex-direction: row-reverse }
+
+/* --- Tamanhos ------------------------------------------- */
+.btn-md--sm { padding: 9px 18px;  font-size: .8rem }
+.btn-md--md { padding: 13px 24px; font-size: .92rem }
+.btn-md--lg { padding: 16px 32px; font-size: 1.05rem }
+
+/* --- Variantes ------------------------------------------ */
+
+/* Primary — cobre (padrão) */
+.btn-md--primary {
+  background: linear-gradient(135deg, #c47758, #e4a080);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(112,55,38,.28);
+}
+.btn-md--primary:hover {
+  background: linear-gradient(135deg, #b86a4c, #d9906e);
+  box-shadow: 0 14px 32px rgba(112,55,38,.36);
+}
+
+/* Secondary — contorno cobre */
+.btn-md--secondary {
+  background: transparent;
+  color: var(--copper);
+  box-shadow: inset 0 0 0 2px var(--copper);
+}
+.btn-md--secondary:hover {
+  background: rgba(211,139,110,.1);
+  box-shadow: inset 0 0 0 2px var(--copper-light);
+}
+
+/* Ghost — discreto, fundo suave */
+.btn-md--ghost {
+  background: rgba(211,139,110,.10);
+  color: var(--brown);
+  box-shadow: none;
+}
+.btn-md--ghost:hover {
+  background: rgba(211,139,110,.18);
+  box-shadow: 0 6px 16px rgba(112,55,38,.12);
+}
+
+/* Dark — marrom escuro */
+.btn-md--dark {
+  background: var(--brown);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(41,36,33,.22);
+}
+.btn-md--dark:hover {
+  background: var(--ink);
+  box-shadow: 0 14px 32px rgba(41,36,33,.32);
+}
+
+/* Danger — vermelho */
+.btn-md--danger {
+  background: linear-gradient(135deg, #b03020, #e04030);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(192,57,43,.28);
+}
+.btn-md--danger:hover {
+  box-shadow: 0 14px 32px rgba(192,57,43,.4);
+}
+
+/* Success — verde */
+.btn-md--success {
+  background: linear-gradient(135deg, #1e8449, #27ae60);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(39,174,96,.26);
+}
+.btn-md--success:hover {
+  box-shadow: 0 14px 32px rgba(39,174,96,.38);
+}
+
+/* WhatsApp */
+.btn-md--whatsapp {
+  background: linear-gradient(135deg, #128c4b, #25d366);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(37,211,102,.26);
+}
+.btn-md--whatsapp:hover {
+  box-shadow: 0 14px 32px rgba(37,211,102,.38);
+}
+
+/* Responsive */
+@media(max-width:700px){
+  .btn-md      { padding: 12px 20px; font-size: .88rem }
+  .btn-md--sm  { padding: 8px 15px;  font-size: .78rem }
+  .btn-md--lg  { padding: 14px 24px; font-size: 1rem   }
+}
+
+/* Bloco centrado para botão ocupar linha inteira (opcional) */
+.btn-block { display: flex; justify-content: center; margin: 24px 0 }
+.btn-block .btn-md { min-width: 220px }

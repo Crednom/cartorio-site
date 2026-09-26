@@ -26,6 +26,7 @@ image: assets\images\casamento_civil.png
 
 Vai casar? Confira a lista completa de documentos necessários, regras de comprovantes de endereço, escolha do regime de bens e prazos importantes do processo de habilitação!
 
+
 ---
 
 ## 📅 Prazos e Custos Iniciais do Processo
@@ -74,7 +75,7 @@ Os comprovantes de endereço devem ser os mais recentes possíveis, emitidos no 
 
 ---
 
-## 💍 4. Regimes de Bens
+## 💍 4. Regimes de Bensi
 
 A escolha do regime de bens determina como o patrimônio do casal será administrado.
 
@@ -117,10 +118,10 @@ A legislação determina que o regime seja obrigatoriamente o de **Separação O
 
 Antes de dar entrada no cartório, é necessário preencher as folhas dos noivos e das testemunhas. Você pode imprimi-las em qualquer papelaria ou vir até o cartório para pegá-las pessoalmente:
 
-- Folha para os Noivos preencherem: [**Clique aqui para baixar a Folha dos Noivos**](https://drive.google.com/file/d/1Z2S2o_grjb4bIvocOt5oZW2kbK18nQwQ/view)
+### Baixe as folhas necessárias abaixo: 
+{% include button.html text="Folha dos Noivos" link="https://drive.google.com/file/d/1Z2S2o_grjb4bIvocOt5oZW2kbK18nQwQ/view" icon="download" variant="secondary" %} 
 
-- Folha para as Testemunhas preencherem: [**Clique aqui para baixar a Folha das Testemunhas**](https://drive.google.com/file/d/1AjefbcJ1me4151tKToXrwz_KoVdpGcvO/view)
-### Ainda ficou com alguma dúvida?
+{% include button.html text="Folha das Testemunhas" link="https://drive.google.com/file/d/1Z2S2o_grjb4bIvocOt5oZW2kbK18nQwQ/view" icon="download" variant="secondary" %}
 
-Entre em contato com nossa equipe pelo WhatsApp para receber orientação.
+
 

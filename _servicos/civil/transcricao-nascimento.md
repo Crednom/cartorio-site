@@ -40,7 +40,11 @@ Se você ou seu filho nasceu no exterior e precisa fazer a transcrição (trasla
 
 ### Procuração (se o processo for feito por procurador)
 
-- **Requisitos da Procuração:** A procuração deve ser obrigatoriamente pública, específica para o ato de transcrição/traslado de nascimento e mencionar expressamente o cartório onde o procedimento será realizado. Para saber como realizar a procuração acesse: **Procuração Pública**.
+- **Requisitos da Procuração:** A procuração deve ser obrigatoriamente pública, específica para o ato de transcrição/traslado de nascimento e mencionar expressamente o cartório onde o procedimento será realizado. 
+ 
+#### Para solicitar uma procuração clique: 
+ {% include button.html text='Solicitar Procuração' link='https://api.whatsapp.com/send/?phone=5533999586268&text&.> type=phone_number&app_absent=0' icon='whatsapp' %} 
+
 
 ---
 
@@ -57,8 +61,4 @@ Se você ou seu filho nasceu no exterior e precisa fazer a transcrição (trasla
 - **Entrega Completa:** A documentação deve ser entregue completa e de uma só vez para análise do processo.
 
 ---
-
-### Ainda ficou com alguma dúvida?
-
-Entre em contato com nossa equipe pelo WhatsApp para receber orientação.
 

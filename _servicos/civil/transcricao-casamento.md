@@ -44,7 +44,10 @@ Se você se casou no exterior e precisa realizar a transcrição (traslado) do s
 
 ### Requerimento e Procuração (caso nenhuma das partes esteja no Brasil)
 
-- **Requisitos do Requerimento e Procuração:** O requerimento deve ser assinado por um dos cônjuges ou por procurador. Se for por procuração, ela deve ser obrigatoriamente pública, específica para o ato de transcrição de casamento e mencionar o cartório onde o serviço será realizado. Para saber como realizar a procuração acesse: **Procuração Pública**.
+- **Requisitos do Requerimento e Procuração:** O requerimento deve ser assinado por um dos cônjuges ou por procurador. Se for por procuração, ela deve ser obrigatoriamente pública, específica para o ato de transcrição de casamento e mencionar o cartório onde o serviço será realizado. 
+
+#### Para solicitar uma procuração clique: 
+ {% include button.html text='Solicitar Procuração' link='https://api.whatsapp.com/send/?phone=5533999586268&text&.> type=phone_number&app_absent=0' icon='whatsapp' %} 
 
 ---
 
@@ -63,7 +66,4 @@ Se você se casou no exterior e precisa realizar a transcrição (traslado) do s
 
 ---
 
-### Ainda ficou com alguma dúvida?
-
-Entre em contato com nossa equipe pelo WhatsApp para receber orientação.
 

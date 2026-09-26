@@ -65,6 +65,10 @@ RG, CNH ou Passaporte (em formato PDF).
 ### Certidão de Estado Civil: 
 Certidão de Nascimento ou de Casamento em PDF (com as devidas averbações de divórcio ou anotações de óbito, se for o caso), essencial principalmente quando a procuração envolver negócios imobiliários.
 
+
+#### Para solicitar uma certidão clique: 
+ {% include button.html text='Solicitar Certidão' link='https://api.whatsapp.com/send/?phone=5533998171547&text&type=phone_number&app_absent=0' icon='whatsapp' %} 
+
 ### Qualificação Completa:
 - Nacionalidade
 - Estado civil
