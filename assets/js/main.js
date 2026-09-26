@@ -132,12 +132,26 @@
     carousel.addEventListener('focusout',e=>{if(!carousel.contains(e.relatedTarget))focused=false});
     carousel.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key))pauseAfterInteraction()});
     let last=performance.now();
+    // Track scroll position ourselves in sub-pixel precision: the browser rounds/truncates
+    // element.scrollLeft to whole pixels, so reading it back every frame as the base for a
+    // small fractional increment (dt*speed is usually well under 1px) silently discards the
+    // fractional part each time and the carousel never visibly moves. Keeping our own float
+    // and only writing the rounded value to the DOM fixes that.
+    let virtualScroll = track.scrollLeft;
     const loop=(now)=>{
-      if(!hovered && !focused && !dragging && now>=resumeAt) {
+      const active = !hovered && !focused && !dragging && now>=resumeAt;
+      if(!active) {
+        virtualScroll = track.scrollLeft; // stay in sync with manual scroll/drag/arrows
+      } else {
         const loopWidth=cycleWidth();
         if(loopWidth>0 && track.scrollWidth>=track.clientWidth+loopWidth) {
-          const dt=Math.min(32,now-last); track.scrollLeft += dt*speed;
-          if(track.scrollLeft>=loopWidth) track.scrollLeft-=loopWidth;
+          const dt=Math.min(32,now-last);
+          virtualScroll += dt*speed;
+          if(virtualScroll>=loopWidth) virtualScroll-=loopWidth;
+          if(virtualScroll<0) virtualScroll+=loopWidth;
+          track.scrollLeft = virtualScroll;
+        } else {
+          virtualScroll = track.scrollLeft;
         }
       }
       last=now; requestAnimationFrame(loop);
@@ -227,6 +241,22 @@
         heroVideo.currentTime = 0;
         startPlay();
       }
+    });
+
+    // Some browsers (notably Safari/iOS, and Chrome's back/forward cache) silently pause
+    // background <video> elements when the user navigates away and then returns to the page,
+    // without firing 'ended'. Since this video has no visible play/pause control, any pause
+    // we didn't trigger ourselves is unintended, so just try to resume it whenever the page
+    // is visible again.
+    heroVideo.addEventListener('pause', () => {
+      if (!document.hidden) startPlay();
+    });
+
+    // Fires when a page is restored from the back/forward cache (e.g. user clicks a link,
+    // then hits the browser's back button) - a case that does NOT re-run this whole script
+    // and does NOT always fire 'visibilitychange', so the video can come back paused/blank.
+    window.addEventListener('pageshow', (event) => {
+      if (event.persisted || heroVideo.paused) startPlay();
     });
 
     startPlay();

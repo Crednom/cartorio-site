@@ -116,7 +116,7 @@ h2{font-size:clamp(2rem,4vw,3.3rem)}
 
 /* Hero Background Video & Diffuse Black Mask */
 .hero__video-container{position:absolute;top:0;bottom:0;right:0;height:100%;width:58%;max-width:960px;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:1;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse 65% 55% at 50% 50%,#000 25%,rgba(0,0,0,.75) 55%,transparent 85%);mask-image:radial-gradient(ellipse 65% 55% at 50% 50%,#000 25%,rgba(0,0,0,.75) 55%,transparent 85%)}
-.hero__video{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;mix-blend-mode:screen;filter:contrast(1.08) brightness(1.04)}
+.hero__video{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;filter:contrast(1.12) brightness(.92) saturate(1.08)}
 .hero__video-mask{position:absolute;inset:0;height:100%;width:100%;pointer-events:none;background:radial-gradient(ellipse 65% 55% at center,transparent 15%,rgba(18,10,7,.45) 55%,rgba(18,10,7,.98) 95%),linear-gradient(90deg,rgba(18,10,7,.98) 0%,transparent 22%,transparent 78%,rgba(18,10,7,.85) 100%),linear-gradient(180deg,rgba(18,10,7,.9) 0%,transparent 18%,transparent 82%,rgba(18,10,7,.98) 100%)}
 
 @media(max-width:1000px) and (min-width:701px){.hero,.hero__inner{min-height:700px}.hero__inner{padding-top:116px;padding-bottom:52px;gap:28px}.hero__copy{max-width:620px}.hero h1{font-size:clamp(3rem,5.5vw,4.5rem)}.hero__mark{flex-basis:260px;width:260px;height:260px}.hero__mark span{font-size:1.8rem}.hero__video-container{right:0;width:55%;height:100%;opacity:.75}}
