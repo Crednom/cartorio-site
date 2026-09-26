@@ -113,8 +113,14 @@ h2{font-size:clamp(2rem,4vw,3.3rem)}
 .hero__text{max-width:620px;margin:22px 0 26px}
 .hero__copy>.button{margin-top:0;min-height:58px;padding:15px 24px}
 .hero__mark{flex:0 0 360px}
-@media(max-width:1000px) and (min-width:701px){.hero,.hero__inner{min-height:700px}.hero__inner{padding-top:116px;padding-bottom:52px;gap:28px}.hero__copy{max-width:620px}.hero h1{font-size:clamp(3rem,5.5vw,4.5rem)}.hero__mark{flex-basis:260px;width:260px;height:260px}.hero__mark span{font-size:1.8rem}}
-@media(max-width:700px){.hero,.hero__inner{min-height:740px}.hero__inner{padding-top:125px;padding-bottom:78px;align-items:flex-end}.hero__copy{max-width:none}.hero h1{font-size:clamp(2.65rem,10vw,3.75rem);line-height:1.04}.hero__text{margin:18px 0 22px}.hero__copy>.button{min-height:54px;padding:13px 20px}.hero__mark{display:none}}
+
+/* Hero Background Video & Diffuse Black Mask */
+.hero__video-container{position:absolute;top:0;bottom:0;right:0;height:100%;width:58%;max-width:960px;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:1;overflow:hidden;-webkit-mask-image:radial-gradient(ellipse 65% 55% at 50% 50%,#000 25%,rgba(0,0,0,.75) 55%,transparent 85%);mask-image:radial-gradient(ellipse 65% 55% at 50% 50%,#000 25%,rgba(0,0,0,.75) 55%,transparent 85%)}
+.hero__video{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;mix-blend-mode:screen;filter:contrast(1.08) brightness(1.04)}
+.hero__video-mask{position:absolute;inset:0;height:100%;width:100%;pointer-events:none;background:radial-gradient(ellipse 65% 55% at center,transparent 15%,rgba(18,10,7,.45) 55%,rgba(18,10,7,.98) 95%),linear-gradient(90deg,rgba(18,10,7,.98) 0%,transparent 22%,transparent 78%,rgba(18,10,7,.85) 100%),linear-gradient(180deg,rgba(18,10,7,.9) 0%,transparent 18%,transparent 82%,rgba(18,10,7,.98) 100%)}
+
+@media(max-width:1000px) and (min-width:701px){.hero,.hero__inner{min-height:700px}.hero__inner{padding-top:116px;padding-bottom:52px;gap:28px}.hero__copy{max-width:620px}.hero h1{font-size:clamp(3rem,5.5vw,4.5rem)}.hero__mark{flex-basis:260px;width:260px;height:260px}.hero__mark span{font-size:1.8rem}.hero__video-container{right:0;width:55%;height:100%;opacity:.75}}
+@media(max-width:700px){.hero,.hero__inner{min-height:740px}.hero__inner{padding-top:125px;padding-bottom:78px;align-items:flex-end}.hero__copy{max-width:none}.hero h1{font-size:clamp(2.65rem,10vw,3.75rem);line-height:1.04}.hero__text{margin:18px 0 22px}.hero__copy>.button{min-height:54px;padding:13px 20px}.hero__mark{display:none}.hero__video-container{right:0;left:0;top:0;bottom:0;width:100%;height:100%;max-width:none;opacity:.32;-webkit-mask-image:radial-gradient(circle at 50% 35%,#000 20%,transparent 75%);mask-image:radial-gradient(circle at 50% 35%,#000 20%,transparent 75%)}}
 
 /* Brand wordmark: accessible live text paired with the supplied SVG symbol. */
 .brand{gap:12px;min-width:0}

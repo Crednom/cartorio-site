@@ -190,4 +190,48 @@
       });
     }).catch(()=>{});
   }
+
+  // Hero video looping and autoplay guarantee
+  const heroVideo = $('.hero__video');
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.loop = true;
+    heroVideo.playsInline = true;
+    heroVideo.setAttribute('muted', '');
+    heroVideo.setAttribute('loop', '');
+    heroVideo.setAttribute('playsinline', '');
+
+    const startPlay = () => {
+      heroVideo.muted = true;
+      const playPromise = heroVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay fallback on first user interaction
+          const onFirstInteraction = () => {
+            heroVideo.muted = true;
+            heroVideo.play().catch(() => {});
+            ['click', 'touchstart', 'scroll'].forEach(evt => removeEventListener(evt, onFirstInteraction));
+          };
+          ['click', 'touchstart', 'scroll'].forEach(evt => addEventListener(evt, onFirstInteraction, {passive:true, once:true}));
+        });
+      }
+    };
+
+    heroVideo.addEventListener('ended', () => {
+      heroVideo.currentTime = 0;
+      startPlay();
+    });
+
+    heroVideo.addEventListener('timeupdate', () => {
+      if (heroVideo.duration && heroVideo.currentTime >= heroVideo.duration - 0.15) {
+        heroVideo.currentTime = 0;
+        startPlay();
+      }
+    });
+
+    startPlay();
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) startPlay();
+    });
+  }
 })();
