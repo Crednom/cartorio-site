@@ -42,6 +42,10 @@ Se você se casou no exterior e precisa realizar a transcrição (traslado) do s
 - **Documento de Identificação:** RG e CPF do cônjuge brasileiro (ou do requerente). Caso o cônjuge brasileiro seja naturalizado, deve-se apresentar o Certificado de Naturalização ou documento comprovatório equivalente.
 - **Comprovante de Residência:** Comprovante atualizado em nome de um dos cônjuges na comarca de atendimento.
 
+- Os comprovantes de endereço devem ser os mais recentes possíveis, emitidos no máximo com **3 meses (90 dias)** de atualização.
+
+- **Tipos de comprovantes aceitos:** Conta de água, luz, internet, celular, extrato bancário de bancos físicos ou documento de uma instituição oficial constando nome, endereço atual e data recente.
+
 ### Requerimento e Procuração (caso nenhuma das partes esteja no Brasil)
 
 - **Requisitos do Requerimento e Procuração:** O requerimento deve ser assinado por um dos cônjuges ou por procurador. Se for por procuração, ela deve ser obrigatoriamente pública, específica para o ato de transcrição de casamento e mencionar o cartório onde o serviço será realizado. 

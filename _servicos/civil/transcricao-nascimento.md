@@ -38,6 +38,10 @@ Se você ou seu filho nasceu no exterior e precisa fazer a transcrição (trasla
 - **Documentos de Identificação dos Pais (ou do Requerente):** RG e CPF originais do pai, da mãe ou do registrado/requerente. Se o genitor for estrangeiro, pode apresentar passaporte válido, Carteira de Registro Nacional Migratório (CRNM) ou documento de identidade civil equivalente aceito em tratados.
 - **Comprovante de Residência:** Comprovante atualizado em nome do pai ou da mãe na comarca de atendimento.
 
+- Os comprovantes de endereço devem ser os mais recentes possíveis, emitidos no máximo com **3 meses (90 dias)** de atualização.
+
+- **Tipos de comprovantes aceitos:** Conta de água, luz, internet, celular, extrato bancário de bancos físicos ou documento de uma instituição oficial constando nome, endereço atual e data recente.
+
 ### Procuração (se o processo for feito por procurador)
 
 - **Requisitos da Procuração:** A procuração deve ser obrigatoriamente pública, específica para o ato de transcrição/traslado de nascimento e mencionar expressamente o cartório onde o procedimento será realizado. 
