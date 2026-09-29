@@ -67,7 +67,7 @@ Vai casar? Confira a lista completa de documentos necessários, regras de compro
 Os comprovantes de endereço devem ser os mais recentes possíveis, emitidos no máximo com **3 meses (90 dias)** de atualização.
 
 - **Obrigatório:** Pelo menos **um dos noivos precisa residir no município de Itanhomi**.
-- **Tipos de comprovantes aceitos:** Conta de água, luz, internet, celular, extrato bancário ou documento de uma instituição oficial constando nome, endereço atual e data recente.
+- **Tipos de comprovantes aceitos:** Conta de água, luz, internet, celular, extrato bancário de bancos físicos ou documento de uma instituição oficial constando nome, endereço atual e data recente.
 - **Se o casal já morar junto:** Quem tiver o nome no comprovante pode assinar uma declaração de endereço afirmando que a outra parte também reside com ela.
 - **Se nenhum dos noivos tiver comprovante no próprio nome:** A pessoa titular do comprovante (ex: proprietário da casa onde residem) precisa assinar uma declaração de endereço para ambas as partes.
 - **Documento do Declarante:** Sempre que for feita a declaração de endereço, a pessoa que for declarar **precisa apresentar o seu documento de identificação original (RG ou CNH)**.
@@ -81,7 +81,7 @@ Os comprovantes de endereço devem ser os mais recentes possíveis, emitidos no 
 
 ---
 
-## 💍 4. Regimes de Bensi
+## 💍 4. Regimes de Bens
 
 A escolha do regime de bens determina como o patrimônio do casal será administrado.
 
