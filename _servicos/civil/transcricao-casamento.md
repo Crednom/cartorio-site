@@ -57,9 +57,31 @@ Se você se casou no exterior e precisa realizar a transcrição (traslado) do s
 
 ## 💍 2. Regime de Bens e Alteração de Nome
 
-- **Omissão do Regime de Bens:** Se a certidão estrangeira ou consular não mencionar o regime de bens, o traslado poderá ser feito normalmente. O regime de bens ou as regras patrimoniais poderão ser averbados posteriormente mediante apresentação da documentação exigida.
-- **Pacto Antenupcial:** Caso tenha sido feito um pacto antenupcial perante autoridade estrangeira, ele deve ser previamente legalizado ou apostilado no exterior, traduzido por tradutor juramentado e registrado no Cartório de Títulos e Documentos no Brasil antes do traslado.
-- **Nome dos Cônjuges:** Se a certidão não indicar a mudança de nome após o matrimônio, os nomes de solteiro serão mantidos temporariamente. A alteração para o novo nome adotado pode ser feita posteriormente por meio de averbação complementar com a devida comprovação.
+### Omissão do Regime de Bens
+
+A ausência do regime de bens na certidão de casamento estrangeira não impede a realização da transcrição (traslado).
+
+O regime de bens poderá ser averbado posteriormente no assento brasileiro, sem necessidade de autorização judicial, mediante apresentação da documentação comprobatória exigida.
+
+Nos casos em que o casamento seja regido pela legislação brasileira, existem regras específicas para a definição e averbação do regime de bens aplicável.
+
+### Pacto Antenupcial
+
+Caso tenha sido celebrado pacto antenupcial perante autoridade estrangeira, o documento deverá ser previamente legalizado ou apostilado, conforme o caso, traduzido por tradutor público juramentado e registrado no Cartório de Registro de Títulos e Documentos no Brasil, antes da realização do traslado.
+
+### Alteração do Nome dos Cônjuges
+
+A ausência dos nomes adotados pelos cônjuges após o casamento na certidão estrangeira não impede a realização da transcrição.
+
+Nesse caso, serão mantidos inicialmente os nomes de solteiro dos cônjuges. A alteração dos nomes poderá ser realizada posteriormente por averbação, mediante apresentação da documentação comprobatória de que os nomes foram modificados após o casamento, de acordo com a legislação aplicável.
+
+### Outros Dados Faltantes
+
+Os registros de casamento emitidos por autoridades estrangeiras podem não conter todas as informações que normalmente constam nos registros brasileiros.
+
+A ausência de outros dados previstos na legislação brasileira não impede, por si só, a realização da transcrição. Os dados faltantes poderão ser inseridos posteriormente no assento brasileiro por meio de averbação, mediante apresentação de documentação comprobatória, sem necessidade de autorização judicial.
+
+<mark>Importante: quando houver dados faltantes que o interessado queira acrescentar ao assento brasileiro, a inclusão será realizada posteriormente, por averbação, e estará sujeita à cobrança dos emolumentos correspondentes.</mark>
 
 ---
 

@@ -2,22 +2,22 @@
 
 
 {
-  "title": "Transcrição de Casamento",
-  "url": "/cartorio-site/servicos/transcricao-casamento/",
-  "description": "Registro de transcrição de casamento registro civil.",
-  "setor": "civil",
-  "aliases": ["Transcrição de Casamento","transcrição","transcricao","traslado","estrangeiro"],
-  "tags": ["civil","certidão","registro"],
-  "enabled": true
-},
-
-{
   "title": "Protesto de Títulos",
   "url": "/cartorio-site/servicos/protesto-de-titulos/",
   "description": "Informações sobre apresentação e protesto de títulos.",
   "setor": "protesto",
   "aliases": ["protesto","título","protestar título","protesto de título"],
   "tags": ["protesto","títulos"],
+  "enabled": true
+},
+
+{
+  "title": "Transcrição de Casamento",
+  "url": "/cartorio-site/servicos/transcricao-casamento/",
+  "description": "Registro de transcrição de casamento registro civil.",
+  "setor": "civil",
+  "aliases": ["Transcrição de Casamento","transcrição","transcricao","traslado","estrangeiro"],
+  "tags": ["civil","certidão","registro"],
   "enabled": true
 },
 
@@ -32,12 +32,12 @@
 },
 
 {
-  "title": "Cancelamento",
-  "url": "/cartorio-site/servicos/cancelamento/",
-  "description": "Informações sobre cancelamento de protesto.",
-  "setor": "protesto",
-  "aliases": ["cancelar protesto","baixa de protesto","cancelamento"],
-  "tags": ["protesto","cancelamento"],
+  "title": "Inteiro Teor",
+  "url": "/cartorio-site/servicos/inteiro-teor/",
+  "description": "Certidão de inteiro teor: apresenta o conteúdo completo do registro, observadas as restrições previstas em lei.",
+  "setor": "civil",
+  "aliases": ["inteiro teor","inter teor","interteor","teor","inter","iter","iter teor"],
+  "tags": ["civil","inteiro teor","registro"],
   "enabled": true
 },
 
@@ -48,6 +48,26 @@
   "setor": "civil",
   "aliases": ["casamento","casar","quero casar","casamento no cartório","matrimônio"],
   "tags": ["civil","casamento","habilitação"],
+  "enabled": true
+},
+
+{
+  "title": "Cancelamento",
+  "url": "/cartorio-site/servicos/cancelamento/",
+  "description": "Informações sobre cancelamento de protesto.",
+  "setor": "protesto",
+  "aliases": ["cancelar protesto","baixa de protesto","cancelamento"],
+  "tags": ["protesto","cancelamento"],
+  "enabled": true
+},
+
+{
+  "title": "Busca de Registro",
+  "url": "/cartorio-site/servicos/busca/",
+  "description": "A busca de registro é a pesquisa realizada pelo cartório para localizar um registro nos livros, índices, documentos e arquivos do Registro Civil.",
+  "setor": "civil",
+  "aliases": ["registro","busca","assento"],
+  "tags": ["civil","busca de registro","registro"],
   "enabled": true
 },
 
@@ -102,22 +122,22 @@
 },
 
 {
-  "title": "Transcrição de Nascimento",
-  "url": "/cartorio-site/servicos/transcricao-nascimento/",
-  "description": "Informações sobre Transcrição de Nascimento.",
-  "setor": "civil",
-  "aliases": ["transcrição","transcricao nascimento","traslado nascimento","nascimento exterior"],
-  "tags": ["civil","transcrição"],
-  "enabled": true
-},
-
-{
   "title": "Procuração Eletrônica",
   "url": "/cartorio-site/servicos/procuracao-eletronica/",
   "description": "Guia sobre procuração eletrônica e atendimento digital.",
   "setor": "notas",
   "aliases": ["procuração eletrônica","e-notariado","notariado digital","procuração online"],
   "tags": ["notas","procuração","e-notariado"],
+  "enabled": true
+},
+
+{
+  "title": "Transcrição de Nascimento",
+  "url": "/cartorio-site/servicos/transcricao-nascimento/",
+  "description": "Informações sobre Transcrição de Nascimento.",
+  "setor": "civil",
+  "aliases": ["transcrição","transcricao nascimento","traslado nascimento","nascimento exterior"],
+  "tags": ["civil","transcrição"],
   "enabled": true
 }
 
