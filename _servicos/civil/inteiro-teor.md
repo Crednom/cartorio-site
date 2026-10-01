@@ -3,7 +3,7 @@ title: "Inteiro Teor"
 slug: "inteiro teor"
 setor: "civil"
 icon: "document"
-description: "Certidão de inteiro teor: apresenta o conteúdo completo do registro, observadas as restrições previstas em lei."
+description: "Certidão de inteiro teor: apresenta o conteúdo completo do registro."
 aliases:
   - "inteiro teor"
   - "inter teor"
