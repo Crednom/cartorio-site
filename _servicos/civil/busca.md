@@ -2,8 +2,8 @@
 title: "Busca de Registro"
 slug: "busca registro"
 setor: "civil"
-icon: "document"
-description: "A busca para localizar um registro nos livros, índices, documentos e arquivos do Registro Civil"
+icon: "search"
+description: "A busca para localizar um registro do Registro Civil"
 aliases:
   - "registro"
   - "busca"

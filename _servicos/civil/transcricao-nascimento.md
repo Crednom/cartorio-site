@@ -2,7 +2,7 @@
 title: "Transcrição de Nascimento"
 slug: "Transcrição de Nascimento"
 setor: "civil"
-icon: "plus"
+icon: "baby"
 description: "Informações sobre Transcrição de Nascimento."
 aliases:
   - "transcrição"
