@@ -64,7 +64,7 @@
 {
   "title": "Busca de Registro",
   "url": "/cartorio-site/servicos/busca/",
-  "description": "A busca de registro é a pesquisa realizada pelo cartório para localizar um registro nos livros, índices, documentos e arquivos do Registro Civil.",
+  "description": "A busca para localizar um registro nos livros, índices, documentos e arquivos do Registro Civil",
   "setor": "civil",
   "aliases": ["registro","busca","assento"],
   "tags": ["civil","busca de registro","registro"],

@@ -3,7 +3,7 @@ title: "Busca de Registro"
 slug: "busca registro"
 setor: "civil"
 icon: "document"
-description: "A busca de registro é a pesquisa realizada pelo cartório para localizar um registro nos livros, índices, documentos e arquivos do Registro Civil."
+description: "A busca para localizar um registro nos livros, índices, documentos e arquivos do Registro Civil"
 aliases:
   - "registro"
   - "busca"
