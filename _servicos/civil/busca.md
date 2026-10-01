@@ -165,7 +165,7 @@ Se o registro for encontrado e a certidão for fornecida, <mark> a busca não de
 
 **5.** Se o registro for encontrado, o interessado poderá solicitar a certidão.
 
-**6.** Se a busca resultar no fornecimento da certidão, <mark>**não são cobrados valores de busca separadamente**</mark>.
+**6.** Se a busca resultar no fornecimento da certidão, <mark> não são cobrados valores de busca separadamente </mark>.
 
 **7.** Se o registro não for encontrado, <mark> o valor da busca realizada permanece devido </mark>.
 
